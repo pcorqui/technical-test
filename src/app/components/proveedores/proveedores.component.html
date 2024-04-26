@@ -1,0 +1,7 @@
+<div *ngFor="let proveedor of proveedores">
+    <p>{{proveedor.name}}</p>
+    <p>{{proveedor.razonSocial}}</p>
+    <p>{{proveedor.direccion}}</p>
+    <p>{{proveedor.active}}</p>
+    <button (click)="deleteProveedor(proveedor.id)">delete</button>
+</div>

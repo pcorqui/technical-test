@@ -1,0 +1,16 @@
+<h2>Formulario de Contacto</h2>
+<form (ngSubmit)="onSubmit()">
+    <div>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" [(ngModel)]="nombre">
+    </div>
+    <div>
+        <label for="razonSocial">Razón Social:</label>
+        <input type="text" id="razonSocial" name="razonSocial" [(ngModel)]="razonSocial">
+    </div>
+    <div>
+        <label for="direccion">Dirección:</label>
+        <input type="text" id="direccion" name="direccion" [(ngModel)]="direccion">
+    </div>
+    <button type="submit">Enviar</button>
+</form>
