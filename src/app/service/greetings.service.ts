@@ -6,16 +6,16 @@ import { Injectable } from '@angular/core';
 })
 export class GreetingsService {
 
-  api = "http://localhost:8080"
+  api = "http://localhost:8080/saludar"
 
   constructor(private http: HttpClient) { }
 
 
   getGreeting(){
-    return this.http.get<string>(`${this.api}/saludar`);
+    return this.http.get(`${this.api}`, {responseType: 'text'});
   }
 
   getVersion(){
-    return this.http.get<Number>(`${this.api}/version`);
+    return this.http.get(`${this.api}/version`, {responseType: 'text'});
   }
 }
